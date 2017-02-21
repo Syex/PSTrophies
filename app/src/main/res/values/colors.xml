@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_blue">#33B5E5</color>
+    <color name="app_blue_alpha">#FF33B5E5</color>
+
+    <color name="important">#3333B5E5</color>
+    <color name="unimportant">#77FF5454</color>
+</resources>

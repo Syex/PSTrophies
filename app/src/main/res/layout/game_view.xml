@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/gameListLogo"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/gameListName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/gameListPlatTV"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/gameListPlatIV"
+            android:layout_toRightOf="@+id/gameListPlatTV"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/trophy_pt"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/gameListGoldTV"
+            android:layout_toRightOf="@+id/gameListPlatIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/gameListGoldIV"
+            android:layout_toRightOf="@+id/gameListGoldTV"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/trophy_gld"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/gameListSilverTV"
+            android:layout_toRightOf="@+id/gameListGoldIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/gameListSilverIV"
+            android:layout_toRightOf="@+id/gameListSilverTV"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/trophy_slv"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/gameListBronzeTV"
+            android:layout_toRightOf="@+id/gameListSilverIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/gameListBronzeIV"
+            android:layout_toRightOf="@+id/gameListBronzeTV"
+            android:src="@drawable/trophy_br"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/gameListPoints"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

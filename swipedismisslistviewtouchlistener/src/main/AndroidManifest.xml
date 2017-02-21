@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ps4trophyguide.memorian.de.swipedismisslistviewtouchlistener">
+
+    <application android:allowBackup="false">
+
+    </application>
+
+</manifest>

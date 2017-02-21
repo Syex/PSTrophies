@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity="de.memorian.psleitfadentrophaen.GameListActivity.SelectLetterFragment">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gameListGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</RelativeLayout>

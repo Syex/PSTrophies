@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity=".MainActivity">
+
+    <de.memorian.ps4trophaen.util.AutoResizeTextView
+        android:id="@+id/mainTextView"
+        android:text="@string/app_name"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/searchGame"
+            android:onClick="onClickSearchGame"
+            android:text="@string/searchGame"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/main_button_selector"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/gameList"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onClickGameList"
+            android:text="@string/gameList"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/main_button_selector"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_below="@+id/searchGame"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/gameFavorites"
+            android:text="@string/gameFavorites"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/main_button_selector"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:onClick="onClickFavorites"
+            android:layout_below="@+id/gameList"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dbNeedUpgrade"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:text="@string/dbNeedsUpgrade"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateProgressBar" />
+    </RelativeLayout>
+</RelativeLayout>

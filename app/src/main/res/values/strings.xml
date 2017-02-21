@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PS4 Trophäen-Leitfaden</string>
+    <string name="searchGame">Spiel suchen</string>
+    <string name="gameList">Liste durchstöbern</string>
+    <string name="gameFavorites">Favoriten</string>
+    <string name="mainMenu">Hauptmenü</string>
+
+    <!-- GamesListFragment -->
+    <string name="points">Gesamtpunkte:</string>
+    <string name="gameDetailReport">Fehler melden</string>
+    <string name="gameDetailSearch">Suche</string>
+    <string name="gameDetailFavourit">Als Favorit setzen</string>
+    <string name="gameDetailFavOn">Als Favorit gesetzt</string>
+    <string name="gameDetailFavOff">Als Favorit entfernt</string>
+
+    <!-- GameDetailFragment -->
+    <string name="hiddenTrophy">Versteckte Trophäe</string>
+    <string name="reportTitle">Nachricht senden</string>
+    <string name="reportMessage">Nutze dieses Formular, um uns etwas zu der Trophäenbeschreibung
+        von \"%1$s\" mitzuteilen.</string>
+    <string name="reportHint">Nachricht</string>
+    <string name="reportSend">Senden</string>
+    <string name="reportSentSuccess">Nachricht gesendet</string>
+    <string name="reportSentFailed">Senden der Nachricht fehlgeschlagen</string>
+    <string name="appNotFoundTitle">Aktion nicht möglich</string>
+    <string name="appNotFoundText">Die erforderliche App wurde auf deinem Gerät nicht gefunden (%1$s).</string>
+    <string name="tableNotFoundTitle">Datenbankfehler</string>
+    <string name="tableNotFoundText">Es ist ein interner Datenbankfehler aufgetreten - die Trophäen
+    zu diesem Spiel konnten nicht gefunden werden.\nBitte versuchen Sie, die Datenbank erneut
+    zu synchronisieren.</string>
+    <string name="gameDetailSwipeTitle">Priorität setzen</string>
+    <string name="gameDetailSwipeText">Wenn Sie eine Trophäe nach rechts wischen,
+        wird diese mit einer höheren Priorität versehen und fortan vor allen anderen Trophäen
+    angezeigt.\nWischen Sie die Trophäe hingegen nach links, so wird sie mit einer niedrigeren
+        Priorität versehen und fortan nach allen anderen Trophäen angezeigt.</string>
+
+    <!-- MainActivity -->
+    <string name="title_activity_search">Spiel suchen</string>
+    <string name="syncDB">Datenbank synchronisieren</string>
+    <string name="syncDBHeader">Synchronisiere Datenbank</string>
+    <string name="syncDBSV">Synchronisiere regelmäßig die Datenbank, um stets neue Spiele
+    und Aktualisierungen zu Trophäenbeschreibungen zu erhalten.\nWenn ein Update verfügbar ist,
+    wird dies untem im Hauptmenü angezeigt.</string>
+    <string name="syncNowTitle">Synchronisierung</string>
+    <string name="syncNowMsg">Möchtest Du die Datenbank jetzt synchronisieren?\nEs wird empfohlen,
+    dafür mit einem WLAN-Netzwerk verbunden zu sein.</string>
+
+    <!-- SyncActivity -->
+    <string name="syncDBCatching">Sammle Informationen...</string>
+    <string name="title_activity_changelog">ChangelogActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- ChangelogActivity -->
+    <string name="changelogTitle">Änderungen</string>
+    <string name="cancel">Schließen</string>
+    <string name="synchronize">Synchronisieren</string>
+    <string name="dbNeedsUpgrade">Update verfügbar</string>
+    <string name="properties">Einstellungen</string>
+
+    <!-- Preferences -->
+    <string name="playyoutubeinterntitle">Abspielen der YouTube-Videos</string>
+    <string name="playyoutubeinterntext">Verlinkte YouTube-Videos werden vorzugsweise in einem eigenen Fenster abgespielt, anstatt die YouTube-App zu öffnen</string>
+
+</resources>
