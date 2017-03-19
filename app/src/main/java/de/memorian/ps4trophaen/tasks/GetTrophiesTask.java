@@ -5,6 +5,10 @@ import android.os.AsyncTask;
 import android.util.JsonReader;
 import android.util.Log;
 
+import de.memorian.ps4trophaen.models.Trophy;
+import de.memorian.ps4trophaen.storage.TrophyDBHelper;
+import de.memorian.ps4trophaen.storage.TrophyDatabase;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -20,10 +24,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.memorian.ps4trophaen.models.Trophy;
-import de.memorian.ps4trophaen.storage.TrophyDBHelper;
-import de.memorian.ps4trophaen.storage.TrophyDatabase;
-
 /**
  * Receives the given MySQL table and puts the result in the SQLite database.
  *
@@ -32,7 +32,7 @@ import de.memorian.ps4trophaen.storage.TrophyDatabase;
  */
 public class GetTrophiesTask extends AsyncTask<Void, Void, Void> {
 
-    private final String url = "http://www.seifertion.de/PS4Server/getgame.php";
+    private final String url = "https://seifertion.de/PS4Server/getgame.php";
     private TaskFinishedListener taskFinishedListener;
     private final TrophyDBHelper trophyDBHelper;
     private final String xref;
@@ -75,7 +75,7 @@ public class GetTrophiesTask extends AsyncTask<Void, Void, Void> {
                     ContentValues values = readTrophy(jsonReader);
                     trophyValues.add(values);
                 }catch (Exception e) {
-
+                    Log.e(getClass().getSimpleName(), "Error reading a trophy", e);
                 }
             }
             trophyDBHelper.addTrophies(xref, trophyValues);

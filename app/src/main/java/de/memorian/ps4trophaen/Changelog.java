@@ -38,7 +38,7 @@ public class Changelog {
     /**
      * URL to changelog PHP script.
      */
-    private final String url = "http://www.seifertion.de/PS4Server/getchangelog.php";
+    private final String url = "https://seifertion.de/PS4Server/getchangelog.php";
     /**
      * Calling Activity.
      */

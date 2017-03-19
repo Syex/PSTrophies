@@ -5,6 +5,11 @@ import android.os.AsyncTask;
 import android.util.JsonReader;
 import android.util.Log;
 
+import de.memorian.ps4trophaen.DBSyncActivity;
+import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
+import de.memorian.ps4trophaen.storage.GameOverviewDatabase;
+import de.memorian.ps4trophaen.storage.TrophyDBHelper;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -17,11 +22,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.memorian.ps4trophaen.DBSyncActivity;
-import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
-import de.memorian.ps4trophaen.storage.GameOverviewDatabase;
-import de.memorian.ps4trophaen.storage.TrophyDBHelper;
-
 /**
  * Receives the MySQL table "0games" and puts the result in the SQLite database.
  * Also it automatically invokes the GetTrophiesTask.
@@ -31,7 +31,7 @@ import de.memorian.ps4trophaen.storage.TrophyDBHelper;
  */
 public class GetGameOverviewTask extends AsyncTask<Void, Void, List<String>> {
 
-    private final String url = "http://www.seifertion.de/PS4Server/getgames.php";
+    private final String url = "https://seifertion.de/PS4Server/getgames.php";
     private final DBSyncActivity dbSyncActivity;
     private final GameOverviewDBHelper gameOverviewDBHelper;
     private final TrophyDBHelper trophyDBHelper;
@@ -65,14 +65,12 @@ public class GetGameOverviewTask extends AsyncTask<Void, Void, List<String>> {
             JsonReader jsonReader = new JsonReader(new InputStreamReader(is));
             List<String> xRefs = new ArrayList<String>();
             jsonReader.beginArray();
-            int i = 0;
-            while (i < 5) {
+            while (jsonReader.hasNext()) {
                 try {
                     ContentValues values = readGame(jsonReader);
                     String xRef = values.getAsString(GameOverviewDatabase.XREF);
                     xRefs.add(xRef);
                     gameOverviewDBHelper.addGame(values);
-                    i++;
                 } catch (Exception e) {
                 }
             }

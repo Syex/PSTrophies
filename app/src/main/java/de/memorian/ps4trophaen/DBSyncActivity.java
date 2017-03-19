@@ -6,6 +6,10 @@ import android.util.Log;
 import android.view.Window;
 import android.widget.TextView;
 
+import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
+import de.memorian.ps4trophaen.storage.TrophyDBHelper;
+import de.memorian.ps4trophaen.tasks.GetGameOverviewTask;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -15,10 +19,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-
-import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
-import de.memorian.ps4trophaen.storage.TrophyDBHelper;
-import de.memorian.ps4trophaen.tasks.GetGameOverviewTask;
 
 /**
  * Dialog activity that shows the progress of the syncronization.
@@ -31,7 +31,7 @@ public class DBSyncActivity extends Activity {
     /**
      * URL to mod date PHP script.
      */
-    public static final String versionURL = "http://www.seifertion.de/PS4Server/getmoddate.php";
+    public static final String versionURL = "https://seifertion.de/PS4Server/getmoddate.php";
     private int gamesFinished = 0;
     private int gamesAmount = 0;
     private TextView progressView;
