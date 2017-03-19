@@ -6,7 +6,7 @@ knowledge.
 
 The app provided guides how to get so called *trophies* in PlayStation 4 games. Trophies are some kind of achievements you 
 can earn when playing a game. While some of them are earnable by just playing the game, some are difficult to get and people
-often look at these guides. The app was only live for a little over half a year, as it consumed a lot of time to keep the app up to date.
+often look at these guides. The app was only live from 07/2014 to 05/2015, as it consumed a lot of time to keep the app up to date.
 
 * The app not only provided a guide for a trophy, but also made it easy to perform a Google and YouTube search or directly linked
 to a YouTube video, which could be watched with an integrated player.
