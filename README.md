@@ -1,8 +1,6 @@
 # PSTrophies
 
 Legacy repository of my second app. 
-Please note that architecture, coding style, usage of libraries etc. is heavily outdated and doesn't reflect my today's 
-knowledge.
 
 The app provided guides how to get so called *trophies* in PlayStation 4 games. Trophies are some kind of achievements you 
 can earn when playing a game. While some of them are earnable by just playing the game, some are difficult to get and people
