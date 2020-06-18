@@ -6,7 +6,7 @@ import java.util.List;
 import de.memorian.ps4trophaen.DBSyncActivity;
 
 /**
- * @author Tom-Philipp Seifert
+ *
  * @since 29.10.2014
  */
 public class ProgressHandler implements TaskFinishedListener {

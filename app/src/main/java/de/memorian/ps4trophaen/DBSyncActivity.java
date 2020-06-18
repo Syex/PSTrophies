@@ -23,7 +23,7 @@ import java.io.InputStreamReader;
 /**
  * Dialog activity that shows the progress of the syncronization.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 04.11.2014
  */
 public class DBSyncActivity extends Activity {
@@ -31,7 +31,7 @@ public class DBSyncActivity extends Activity {
     /**
      * URL to mod date PHP script.
      */
-    public static final String versionURL = "https://seifertion.de/PS4Server/getmoddate.php";
+    public static final String versionURL = "";
     private int gamesFinished = 0;
     private int gamesAmount = 0;
     private TextView progressView;

@@ -14,7 +14,7 @@ import de.memorian.ps4trophaen.models.Trophy;
 /**
  * Database support class for the trophies.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 11.10.2014
  */
 public class TrophyDBHelper {

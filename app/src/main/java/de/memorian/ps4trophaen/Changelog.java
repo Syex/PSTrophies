@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * Shows a dialog that shows the last added games.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 04.11.2014
  */
 public class Changelog {
@@ -38,7 +38,7 @@ public class Changelog {
     /**
      * URL to changelog PHP script.
      */
-    private final String url = "https://seifertion.de/PS4Server/getchangelog.php";
+    private final String url = "";
     /**
      * Calling Activity.
      */

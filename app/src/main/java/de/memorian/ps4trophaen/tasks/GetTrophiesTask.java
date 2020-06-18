@@ -27,12 +27,12 @@ import java.util.List;
 /**
  * Receives the given MySQL table and puts the result in the SQLite database.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 11.10.2014
  */
 public class GetTrophiesTask extends AsyncTask<Void, Void, Void> {
 
-    private final String url = "https://seifertion.de/PS4Server/getgame.php";
+    private final String url = "";
     private TaskFinishedListener taskFinishedListener;
     private final TrophyDBHelper trophyDBHelper;
     private final String xref;

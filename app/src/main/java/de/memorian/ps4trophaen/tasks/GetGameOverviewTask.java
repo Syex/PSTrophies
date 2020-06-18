@@ -26,12 +26,12 @@ import java.util.List;
  * Receives the MySQL table "0games" and puts the result in the SQLite database.
  * Also it automatically invokes the GetTrophiesTask.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 10.10.2014
  */
 public class GetGameOverviewTask extends AsyncTask<Void, Void, List<String>> {
 
-    private final String url = "https://seifertion.de/PS4Server/getgames.php";
+    private final String url = "";
     private final DBSyncActivity dbSyncActivity;
     private final GameOverviewDBHelper gameOverviewDBHelper;
     private final TrophyDBHelper trophyDBHelper;

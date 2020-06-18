@@ -53,7 +53,7 @@ import de.memorian.swipedismisslistviewtouchlistener.SwipeDismissListViewTouchLi
 /**
  * Shows a list of trophies.
  *
- * @author Tom-Philipp Seifert 
+ *
  * @since 11.10.2014
  */
 public class GameDetailFragment extends ExpandableListFragment

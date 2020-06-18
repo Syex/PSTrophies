@@ -13,7 +13,7 @@ import de.memorian.ps4trophaen.models.Game;
 /**
  * Database support class for the game overview.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 09.10.2014
  */
 public class GameOverviewDBHelper {

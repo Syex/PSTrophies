@@ -19,7 +19,7 @@ import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
 /**
  * Activity for the favorites.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 19.10.2014
  */
 public class FavoritesActivity extends FragmentActivity implements GamesListFragment.OnFragmentInteractionListener,

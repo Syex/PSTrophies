@@ -26,7 +26,7 @@ import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
  * An activity that is used to choose a letter and shows all games starting with this
  * letter afterwards in a GameListFragment.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 04.11.2014
  */
 public class GameListActivity

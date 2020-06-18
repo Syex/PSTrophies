@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * A dialog the user can enter a message to comment a trophy.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 06.11.2014
  */
 public class ReportErrorDialog {
@@ -32,7 +32,7 @@ public class ReportErrorDialog {
     /**
      * URL to report error_ic PHP script.
      */
-    private final String url = "http://www.seifertion.de/PS4Server/reporterror.php";
+    private final String url = "";
     private final Activity activity;
 
     public ReportErrorDialog(Activity activity) {

@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Model for a game.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 10.10.2014
  */
 public class Game implements Parcelable, Comparable<Game> {

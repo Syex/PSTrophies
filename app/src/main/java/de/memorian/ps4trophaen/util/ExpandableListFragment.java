@@ -27,8 +27,7 @@ import android.widget.TextView;
  *
  * All ASLv2 licensed.
  *
- * Extended by Tom-Philipp Seifert to collapse other groups, when a group
- * is clicked.
+ * Extended to collapse other groups, when a grou is clicked.
  */
 public class ExpandableListFragment extends Fragment
         implements OnCreateContextMenuListener, ExpandableListView.OnChildClickListener,

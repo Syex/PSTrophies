@@ -28,7 +28,7 @@ import de.memorian.ps4trophaen.models.Game;
 /**
  * A ListFragment to display a set of Games.
  *
- * @author Tom-Philipp Seifert (Syex90@gmail.com)
+ *  (Syex90@gmail.com)
  * @since 10.10.2014
  */
 public class GamesListFragment extends ListFragment {

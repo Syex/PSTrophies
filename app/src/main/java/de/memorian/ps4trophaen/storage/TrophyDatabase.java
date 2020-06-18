@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Database for maintaining the trophies for every game.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 11.10.2014
  */
 public class TrophyDatabase extends SQLiteOpenHelper {

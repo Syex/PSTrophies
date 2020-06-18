@@ -7,7 +7,7 @@ import android.preference.PreferenceFragment;
 /**
  * Preferences.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 21.12.2014
  */
 public class SettingsActivity extends PreferenceActivity {

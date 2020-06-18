@@ -17,7 +17,7 @@ import de.memorian.ps4trophaen.storage.GameOverviewDBHelper;
 /**
  * Activity to search a game.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 04.11.2014
  */
 public class SearchActivity extends FragmentActivity implements

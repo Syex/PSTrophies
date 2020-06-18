@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * SQLite database containing the games and general information about them.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 09.10.2014
  */
 public class GameOverviewDatabase extends SQLiteOpenHelper {

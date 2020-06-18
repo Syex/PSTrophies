@@ -8,7 +8,7 @@ import android.text.Spannable;
 /**
  * Model for a trophy.
  *
- * @author Tom-Philipp Seifert
+ *
  * @since 11.10.2014
  */
 public class Trophy implements Parcelable, Comparable<Trophy> {
